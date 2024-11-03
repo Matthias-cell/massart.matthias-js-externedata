@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url('../img/background-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body.hot{
+    background-image: url('../img/pexels-landi-estrefi-1861810515-28553463.jpg');
+}
+h1{
+    text-align: center;
+    font-size: 3rem;
+    color: hsl(216, 90%, 12%);
+}
+form{
+    max-width: 300px;
+    background-color: hsla(216, 90%, 12%, 80%);
+    padding: 1rem 2rem;
+    margin: 0 auto;
+    /*box-shadow: 6px 6px 12px 0 hsl(214, 26%, 27%);*/
+}
+form{
+    border-radius: 0.5rem 0.5rem;
+}
+form input,
+form select{
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 6px;
+    margin: 0.5rem 0;
+    border: 1px solid transparent;
+}
+form label {
+    color: white;
+}
+form button{
+    margin: 2rem auto 0 auto;
+    width: fit-content;
+    display: block;
+}
+div.result{
+    font-size: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    color: white;
+    padding: 1rem;
+    min-height: 4rem;
+}
+footer{
+    text-align: center;
+    font-size: 0.8rem;
+    align-self: end;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="nl-be">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Converture | Temperatuur conversie tool</title>
+        <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Converture</h1>
+        </header>
+        <main>
+            <form>
+                <label for="userInput">Jouw temperatuur</label>
+                <input type="text" id="userInput" placeholder="Temperatuur">
+                <label for="conversion">Gewenste conversie</label>
+                <select id="conversion">
+                    <option value="" disabled selected>Kies een conversie</option>
+                    <option value="1">Celcius naar Kelvin</option>
+                    <option value="2">Celcius naar Fahrenheit</option>
+                    <option value="3">Fahrenheit naar Kelvin</option>
+                    <option value="4">Fahrenheit naar Celcius</option>
+                    <option value="5">Kelvin naar Fahrenheit</option>
+                    <option value="6">Kelvin naar Celcius</option>
+                </select>
+                <div id="result" class="result"></div>
+            </form>     
+        </main>
+        <footer>
+            &copy; Converture
+        </footer>
+    </body>
+</html>
