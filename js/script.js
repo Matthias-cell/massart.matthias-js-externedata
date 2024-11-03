@@ -6,11 +6,7 @@ async function FetchSunTimes() {
 
         const latitude = LocationData.Latitude;
         const longitude = LocationData.Longitude;
-        console.log(latitude);
-        console.log(longitude);
         
-        
-
         // zet deze variabelen in de API dat jou dan info over de zon geeft en zet de 2 belangerijken tijden in variabelen
         const sunResponse = await fetch(`https://api.sunrise-sunset.org/json?lat=${latitude}&lng=${longitude}`);
         const sunData = await sunResponse.json(); // opgezocht, zie vorige
