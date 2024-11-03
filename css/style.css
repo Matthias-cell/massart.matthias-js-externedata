@@ -3,59 +3,40 @@
     padding: 0;
     margin: 0;
 }
-body{
-    background-image: url('../img/background-image.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: grid;
+
+body, html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: lightskyblue;
 }
-body.hot{
-    background-image: url('../img/pexels-landi-estrefi-1861810515-28553463.jpg');
-}
-h1{
+
+.container {
     text-align: center;
-    font-size: 3rem;
-    color: hsl(216, 90%, 12%);
+    color: black;
 }
-form{
-    max-width: 300px;
-    background-color: hsla(216, 90%, 12%, 80%);
-    padding: 1rem 2rem;
-    margin: 0 auto;
-    /*box-shadow: 6px 6px 12px 0 hsl(214, 26%, 27%);*/
-}
-form{
-    border-radius: 0.5rem 0.5rem;
-}
-form input,
-form select{
+
+.ground {
     width: 100%;
-    padding: 0.75rem;
-    border-radius: 6px;
-    margin: 0.5rem 0;
-    border: 1px solid transparent;
+    height: 100px;
+    background-color: green;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
-form label {
-    color: white;
+
+.sun {
+    width: auto;
+    height: auto;
+    margin: 20px auto;
+    fill: orange;
 }
-form button{
-    margin: 2rem auto 0 auto;
-    width: fit-content;
-    display: block;
-}
-div.result{
-    font-size: 2rem;
-    line-height: 2rem;
-    text-align: center;
-    color: white;
-    padding: 1rem;
-    min-height: 4rem;
-}
-footer{
-    text-align: center;
-    font-size: 0.8rem;
-    align-self: end;
+
+.times {
+    margin-top: 20px;
+    font-size: 20px;
 }

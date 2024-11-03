@@ -3,34 +3,26 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Converture | Temperatuur conversie tool</title>
+        <title>API test site</title>
         <link rel="icon" type="image/x-icon" href="/img/favicon.png">
         <link rel="stylesheet" href="css/style.css">
         <script src="js/script.js" defer></script>
     </head>
     <body>
-        <header>
-            <h1>Converture</h1>
-        </header>
         <main>
-            <form>
-                <label for="userInput">Jouw temperatuur</label>
-                <input type="text" id="userInput" placeholder="Temperatuur">
-                <label for="conversion">Gewenste conversie</label>
-                <select id="conversion">
-                    <option value="" disabled selected>Kies een conversie</option>
-                    <option value="1">Celcius naar Kelvin</option>
-                    <option value="2">Celcius naar Fahrenheit</option>
-                    <option value="3">Fahrenheit naar Kelvin</option>
-                    <option value="4">Fahrenheit naar Celcius</option>
-                    <option value="5">Kelvin naar Fahrenheit</option>
-                    <option value="6">Kelvin naar Celcius</option>
-                </select>
-                <div id="result" class="result"></div>
-            </form>     
+            <div class="container">
+                    <!-- de svg aanmaken had ik opgezocht omdat dit al lang geleden is en ik hier niet echt iets van vond in de cursus -->
+                <svg class="sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                    <circle cx="30" cy="30" r="30"/>
+                </svg>
+
+                <div class="times">
+                    <p>Zonsopgang: <span id="sunrise">--:--</span></p>
+                    <p>Zonsondergang: <span id="sunset">--:--</span></p>
+                </div>
+        
+                <div class="ground"></div>
+            </div>
         </main>
-        <footer>
-            &copy; Converture
-        </footer>
     </body>
 </html>
